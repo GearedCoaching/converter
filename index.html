@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter Tool | Geared Coaching</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="converter-container">
+        <h1>Conversion Tool</h1>
+        <p>A no-nonsense tool for precise unit conversions. From simple weight conversions to complex lab values, get the exact numbers you need.</p>
+
+        <div class="conversion-section" id="general-conversions">
+            <h2>General Conversions</h2>
+            <div class="conversion-group">
+                <input type="number" id="general-input" placeholder="Enter value">
+                <select id="general-from-unit">
+                    <option value="lbs">lbs</option>
+                    <option value="kg">kg</option>
+                    <option value="in">in</option>
+                    <option value="cm">cm</option>
+                    <option value="oz">oz</option>
+                    <option value="ml">ml</option>
+                </select>
+                <span class="equals-sign">=</span>
+                <span class="result" id="general-result"></span>
+                <select id="general-to-unit">
+                    <option value="kg">kg</option>
+                    <option value="lbs">lbs</option>
+                    <option value="cm">cm</option>
+                    <option value="in">in</option>
+                    <option value="ml">ml</option>
+                    <option value="oz">oz</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="conversion-section" id="bloodtest-conversions">
+            <h2>Blood Test Conversions</h2>
+            <div class="conversion-group">
+                <input type="number" id="bloodtest-input" placeholder="Enter value">
+                <select id="bloodtest-from-unit">
+                    <option value="ng/dL">ng/dL</option>
+                    <option value="nmol/L">nmol/L</option>
+                    <option value="mg/dL">mg/dL</option>
+                    <option value="mmol/L">mmol/L</option>
+                </select>
+                <span class="equals-sign">=</span>
+                <span class="result" id="bloodtest-result"></span>
+                <select id="bloodtest-to-unit">
+                    <option value="nmol/L">nmol/L</option>
+                    <option value="ng/dL">ng/dL</option>
+                    <option value="mmol/L">mmol/L</option>
+                    <option value="mg/dL">mg/dL</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="conversion-section" id="nanoscale-conversions">
+            <h2>Nanoscale Conversions</h2>
+            <div class="conversion-group">
+                <input type="number" id="nanoscale-input" placeholder="Enter value">
+                <select id="nanoscale-from-unit">
+                    <option value="mg">mg</option>
+                    <option value="mcg">mcg</option>
+                    <option value="ng">ng</option>
+                    <option value="ml">ml</option>
+                    <option value="µl">µl</option>
+                </select>
+                <span class="equals-sign">=</span>
+                <span class="result" id="nanoscale-result"></span>
+                <select id="nanoscale-to-unit">
+                    <option value="mcg">mcg</option>
+                    <option value="ng">ng</option>
+                    <option value="mg">mg</option>
+                    <option value="µl">µl</option>
+                    <option value="ml">ml</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
